@@ -1,0 +1,25 @@
+var game = function(redisObj){
+    var self = {};
+    //initialize game from contextual redis state information
+    self.init = function(redisObj){
+        self.status = redisObj.status || "waiting";
+        self.users = redisObj.users || [];
+        self.bots = redisObj.bots || [];
+        self.ais = redisObj.ais || [];
+        self.roundNo = redisObj.roundNo || 0;
+    };
+    //write contextual information to JSON to be stored back in redis
+    self.toRedisObj = function(){
+        return {
+            status: self.status,
+            users: self.users,
+            bots: self.bots,
+            ais: self.ais,
+            roundNo: self.roundNo
+        }
+    };
+
+    init(redisObj);
+    return self;
+};
+module.exports = game;

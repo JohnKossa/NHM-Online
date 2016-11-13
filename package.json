@@ -1,0 +1,25 @@
+{
+  "name": "NHM-Online",
+  "version": "0.0.1",
+  "description": "Play Ninja Havoc Machines Online!",
+  "main": "main.js",
+  "dependencies": {
+    "connect-redis": "^3.1.0",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JohnKossa/NHM-Online.git"
+  },
+  "author": "John Kossa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnKossa/NHM-Online/issues"
+  },
+  "homepage": "https://github.com/JohnKossa/NHM-Online"
+}
